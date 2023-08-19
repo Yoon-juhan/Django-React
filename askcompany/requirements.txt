@@ -1,0 +1,8 @@
+# 필요한 라이브러리를 한 번에 설치할 수 있다.
+# pip install -r requriments.txt
+
+django~=3.0.0
+pillow
+jupyter
+django-extension
+django-debug-toolbar
