@@ -6,3 +6,4 @@ pillow
 jupyter
 django-extension
 django-debug-toolbar
+django-bootstrap4
