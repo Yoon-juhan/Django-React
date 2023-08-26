@@ -1,5 +1,6 @@
 from django.db import models
 from django.conf import settings
+from django.urls import reverse
 
 # Create your models here.
 
@@ -16,6 +17,9 @@ class Post(models.Model):
     def __str__(self):
         # return f"Custom Post object ({self.id})"
         return self.message
+    
+    def get_absolute_url(self):
+        return reverse("instagram:post_detail", args=[self.pk])
     
     class Meta: # 기본 정렬 조건, (쿼리셋에 다른 정렬 조건을 주면 Meta보다 우선)
         ordering = ['-id']
